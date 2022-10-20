@@ -21,7 +21,7 @@ test('should throw error', () => {
 test('should addAll', () => {
   const team = new Team();
   team.addAll('Lou', 'Jim', 'Sergey', 'Jim');
-  expect(team.members).toEqual(Set {"Lou", "Jim", "Sergey"});
+  expect(team.members).toEqual(new Set(["Lou", "Jim", "Sergey"]));
 });
 
 test('should toArray', () => {
